@@ -41,12 +41,12 @@
       "id": 7
     },
     {
-      "text": "Test",
-      "completed": false,
+      "text": "Buy a domain from Google Firebase",
+      "completed": true,
       "id": 8
     },
     {
-      "text": "hdjhdjhdjsdh",
+      "text": "Make a VS Code extension",
       "completed": false,
       "id": 9
     }

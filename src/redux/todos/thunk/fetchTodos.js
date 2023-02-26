@@ -1,10 +1,8 @@
-import { loaded } from "../actions";
+import { loaded } from "../actions"
 
 const fetchTodos = async (dispatch) => {
-    const response = await fetch("http://localhost:9000/todos");
-    const todos = await response.json();
-
-    dispatch(loaded(todos));
-};
-
-export default fetchTodos;
+    const res = await fetch('http://localhost:9000/todos')
+    const todos = await res.json()
+    dispatch(loaded(todos))
+}
+export default fetchTodos

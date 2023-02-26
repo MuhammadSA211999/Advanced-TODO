@@ -15,17 +15,17 @@ const nextTodoId = (todos) => {
 };
 
 const reducer = (state = initialState, action) => {
+    console.log(state, action);
+
     switch (action.type) {
         case LOADED:
-            return action.payload;
-
+            return action.payload
         case ADDED:
             return [
                 ...state,
                 {
                     id: nextTodoId(state),
                     text: action.payload,
-                    completed: false,
                 },
             ];
 
